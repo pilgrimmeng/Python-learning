@@ -6,21 +6,21 @@ Created on Wed Sep  1 20:15:13 2021
 """
 
 #%% [1]城市和国家
-# def city_country(city, country, population):
-#     information = f'{city.title()}, {country.title()}-population {population}'
-#     return information
+def city_country(city, country, population):
+    information = f'{city.title()}, {country.title()}-population {population}'
+    return information
 
-# import unittest
+import unittest
 
-# class CityTestCase(unittest.TestCase):
-#     '''测试函数city_country'''
-#     def test_city_country(self):
-#         '''能正确处理santiago chile 5000000这样的输出'''
-#         information = city_country('santiago', 'chile', 5000000)
-#         self.assertEqual(information, 'Santiago, Chile-population 5000000')
+class CityTestCase(unittest.TestCase):
+    '''测试函数city_country'''
+    def test_city_country(self):
+        '''能正确处理santiago chile 5000000这样的输出'''
+        information = city_country('santiago', 'chile', 5000000)
+        self.assertEqual(information, 'Santiago, Chile-population 5000000')
 
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 #%% [2]雇员
 class Employee:
